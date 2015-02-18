@@ -1,0 +1,21 @@
+Package: asvm
+Title: anomalySVM
+Description: SVMs for Anomaly Classification and Regression
+Version: 0.0
+License: Artistic-2.0
+Author: Wikum Dinalankara <wikum@cs.umd.edu>
+Maintainer: Wikum Dinalankara <wikum@cs.umd.edu>
+Depends:
+    kernlab,
+    MASS,
+    svmpath,
+    quadprog,
+    Matrix,
+    pROC,
+    lattice,
+    matrixStats
+Collate:
+    'svmfunctions.R'
+    'asvm-package.r'
+    'testutils.R'
+    'utils.R'
