@@ -24,7 +24,10 @@ get_projections = function(Z, X=NULL){
 }
 
 # check whether a matrix is positive semi-definite
-isPD = function(X){ sum(eigen(X)$values < 0) == 0 }
+isPSD = function(X){ sum(eigen(X)$values < 0) == 0 }
+
+# check whether a matrix is positive definite
+isPD = function(X){ sum(eigen(X)$values <= 0) == 0 }
 
 # convert a binary vector of {0, 1} to {-1, 1}
 y_conv = function(y){  
